@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f7f1e7">
+<meta property="og:title" content="José & Asly · 26 de diciembre de 2026">
+<meta property="og:description" content="Hay historias de amor que no solo se cuentan, se viven…">
+<meta property="og:type" content="website">
+<title>José & Asly · Nuestra invitación</title>
+<style>
+:root{--paper:#f8f2e8;--paper2:#fffaf2;--gold:#b18a46;--gold2:#d4b778;--ink:#665746;--rose:#d8b3aa}
+*{box-sizing:border-box}
+html{min-height:100%;background:var(--paper)}
+body{margin:0;min-height:100svh;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 50% 25%,#fffdf8 0%,var(--paper) 68%,#eee2d0 100%);display:flex;justify-content:center;align-items:center;padding:22px 16px}
+.page{width:min(100%,460px);min-height:min(820px,calc(100svh - 44px));position:relative;display:flex;align-items:center;justify-content:center;padding:25px 20px;overflow:hidden}
+.frame{position:absolute;inset:7px;border:1px solid var(--gold2);pointer-events:none}
+.frame:before{content:"";position:absolute;inset:5px;border:1px solid #d9c69f;opacity:.75}
+.corner{position:absolute;width:95px;height:120px;color:var(--gold);opacity:.8}
+.corner svg{width:100%;height:100%}.tl{top:8px;left:8px}.tr{top:8px;right:8px;transform:scaleX(-1)}.bl{bottom:8px;left:8px;transform:scaleY(-1)}.br{bottom:8px;right:8px;transform:scale(-1)}
+.content{position:relative;z-index:1;text-align:center;width:100%;padding:24px 8px 16px}
+.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#967847;margin:0 0 20px}
+.headline{font-size:clamp(19px,5.3vw,25px);font-weight:normal;line-height:1.55;letter-spacing:.045em;margin:0 auto 26px;max-width:310px;color:#77654e}
+.headline em{font-style:italic;color:#a8864a}
+.envelope-wrap{width:min(82%,310px);margin:0 auto 28px;perspective:1000px;filter:drop-shadow(0 13px 15px #816b4720)}
+.envelope{height:205px;position:relative;cursor:pointer;outline:none;transition:transform .3s}
+.env-back{position:absolute;inset:0;background:linear-gradient(145deg,#fffaf0,#eee0c8);border:1px solid #c9ad73;border-radius:3px}
+.env-front{position:absolute;inset:0;background:linear-gradient(155deg,#fff8ed,#f0e2cb);clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);border:1px solid #c9ad73}
+.env-flap{position:absolute;inset:0;background:linear-gradient(145deg,#f5e8d2,#fff9ef);clip-path:polygon(0 0,100% 0,50% 62%);transform-origin:top;transition:transform .85s cubic-bezier(.2,.7,.2,1);z-index:4;border-top:1px solid #c9ad73}
+.seal{position:absolute;z-index:5;left:50%;top:52%;transform:translate(-50%,-50%);width:43px;height:43px;border:1px solid #b18a46;border-radius:50%;display:grid;place-items:center;background:#f9f0df;color:#a47c39;font-size:20px;transition:opacity .3s}
+.envelope.open .env-flap{transform:rotateX(180deg);z-index:0}.envelope.open .seal{opacity:0}.envelope.open{transform:translateY(4px)}
+.envelope:focus-visible{outline:2px solid var(--gold);outline-offset:7px}
+.names{font-size:clamp(30px,8.5vw,42px);font-weight:normal;letter-spacing:.045em;color:#a7813e;margin:0 0 9px}
+.amp{font-style:italic;color:#b9a071;font-size:.85em}
+.date{font-size:13px;letter-spacing:.23em;color:#7b6a54;margin:0 0 23px}
+.rule{height:1px;width:70px;margin:0 auto 19px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.button{appearance:none;border:1px solid #b58e4a;background:linear-gradient(120deg,#b18a46,#d1b16e);color:#fffdf8;border-radius:3px;padding:16px 25px;min-height:52px;font-family:Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:.18em;cursor:pointer;box-shadow:0 5px 12px #8d71321a;transition:transform .2s,box-shadow .2s}
+.button:active{transform:scale(.98)}.button:focus-visible{outline:2px solid #8c682d;outline-offset:4px}
+.hint{font-family:Arial,sans-serif;font-size:10px;letter-spacing:.12em;color:#9c8b72;margin:15px 0 0;text-transform:uppercase}
+.inside{display:none;animation:fade .8s ease both}.inside.visible{display:block}
+.cover.hidden{display:none}
+.inside .small{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#987a45;margin-bottom:22px}
+.inside .message{font-size:18px;line-height:1.7;color:#7a6853;max-width:300px;margin:0 auto 22px}
+.inside .names{font-size:35px}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-height:650px){.page{min-height:calc(100svh - 20px);padding:14px}.headline{margin-bottom:15px}.envelope-wrap{margin-bottom:17px}.envelope{height:160px}.content{padding:12px 8px}.eyebrow{margin-bottom:12px}.date{margin-bottom:15px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="frame" aria-hidden="true"></div>
+  <div class="corner tl" aria-hidden="true"><svg viewBox="0 0 100 125" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M5 88C27 72 20 40 56 12M10 109C35 85 44 55 58 20M15 24C35 26 44 42 45 58M28 13C48 18 58 34 58 48M8 67C24 54 34 50 48 49"/><ellipse cx="27" cy="35" rx="7" ry="15" transform="rotate(-35 27 35)"/><ellipse cx="42" cy="28" rx="6" ry="13" transform="rotate(-42 42 28)"/><ellipse cx="27" cy="70" rx="7" ry="16" transform="rotate(35 27 70)"/><path d="M58 20C67 9 79 9 85 17C75 25 67 25 58 20Z"/><path d="M42 47C48 36 61 34 69 40C62 50 52 52 42 47Z"/><circle cx="58" cy="12" r="3"/><path d="M56 12l-7 -5M59 12l7 -7M57 14l-2 7"/></svg></div>
+  <div class="corner tr" aria-hidden="true"><svg viewBox="0 0 100 125" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M5 88C27 72 20 40 56 12M10 109C35 85 44 55 58 20M15 24C35 26 44 42 45 58M28 13C48 18 58 34 58 48M8 67C24 54 34 50 48 49"/><ellipse cx="27" cy="35" rx="7" ry="15" transform="rotate(-35 27 35)"/><ellipse cx="42" cy="28" rx="6" ry="13" transform="rotate(-42 42 28)"/><ellipse cx="27" cy="70" rx="7" ry="16" transform="rotate(35 27 70)"/><path d="M58 20C67 9 79 9 85 17C75 25 67 25 58 20Z"/><path d="M42 47C48 36 61 34 69 40C62 50 52 52 42 47Z"/><circle cx="58" cy="12" r="3"/></svg></div>
+  <div class="corner bl" aria-hidden="true"><svg viewBox="0 0 100 125" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M5 88C27 72 20 40 56 12M10 109C35 85 44 55 58 20M15 24C35 26 44 42 45 58M28 13C48 18 58 34 58 48M8 67C24 54 34 50 48 49"/><ellipse cx="27" cy="35" rx="7" ry="15" transform="rotate(-35 27 35)"/><ellipse cx="42" cy="28" rx="6" ry="13" transform="rotate(-42 42 28)"/><ellipse cx="27" cy="70" rx="7" ry="16" transform="rotate(35 27 70)"/><path d="M58 20C67 9 79 9 85 17C75 25 67 25 58 20Z"/><path d="M42 47C48 36 61 34 69 40C62 50 52 52 42 47Z"/><circle cx="58" cy="12" r="3"/></svg></div>
+  <div class="corner br" aria-hidden="true"><svg viewBox="0 0 100 125" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M5 88C27 72 20 40 56 12M10 109C35 85 44 55 58 20M15 24C35 26 44 42 45 58M28 13C48 18 58 34 58 48M8 67C24 54 34 50 48 49"/><ellipse cx="27" cy="35" rx="7" ry="15" transform="rotate(-35 27 35)"/><ellipse cx="42" cy="28" rx="6" ry="13" transform="rotate(-42 42 28)"/><ellipse cx="27" cy="70" rx="7" ry="16" transform="rotate(35 27 70)"/><path d="M58 20C67 9 79 9 85 17C75 25 67 25 58 20Z"/><path d="M42 47C48 36 61 34 69 40C62 50 52 52 42 47Z"/><circle cx="58" cy="12" r="3"/></svg></div>
+  <section class="content cover" id="cover">
+    <p class="eyebrow">Una invitación hecha con amor</p>
+    <h1 class="headline">HAY HISTORIAS DE AMOR<br>QUE NO SOLO SE CUENTAN,<br><em>SE VIVEN…</em></h1>
+    <div class="envelope-wrap">
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Sobre de invitación. Pulsa para abrir">
+        <div class="env-back"></div><div class="env-front"></div><div class="env-flap"></div><div class="seal" aria-hidden="true">J<span style="font-size:10px">&</span>A</div>
+      </div>
+    </div>
+    <p class="names">JOSÉ <span class="amp">&</span> ASLY</p>
+    <p class="date">26 · 12 · 2026</p>
+    <div class="rule"></div>
+    <button class="button" id="openBtn">ABRIR INVITACIÓN</button>
+    <p class="hint">Toca para abrir nuestro sobre</p>
+  </section>
+  <section class="content inside" id="inside" aria-live="polite">
+    <p class="small">Con la bendición de Dios</p>
+    <p class="message">Nos hace muy felices compartir contigo el comienzo de nuestro para siempre.</p>
+    <p class="names">JOSÉ <span class="amp">&</span> ASLY</p>
+    <p class="date">26 · 12 · 2026</p>
+    <div class="rule"></div>
+    <p class="message" style="font-size:15px">Nuestra historia continúa…</p>
+    <p class="hint">Esta es la primera versión de nuestra invitación</p>
+  </section>
+</main>
+<script>
+const envelope=document.getElementById('envelope');
+const cover=document.getElementById('cover');
+const inside=document.getElementById('inside');
+const openBtn=document.getElementById('openBtn');
+let opened=false;
+function openInvitation(){if(opened)return;opened=true;envelope.classList.add('open');openBtn.textContent='ABRIENDO…';setTimeout(()=>{cover.classList.add('hidden');inside.classList.add('visible');},650);}
+openBtn.addEventListener('click',openInvitation);
+envelope.addEventListener('click',openInvitation);
+envelope.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openInvitation();}});
+</script>
+</body>
+</html>

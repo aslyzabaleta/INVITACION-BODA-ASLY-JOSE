@@ -9,92 +9,188 @@
 <meta property="og:type" content="website">
 <title>José & Asly · Nuestra invitación</title>
 <style>
-:root{--paper:#f8f2e8;--paper2:#fffaf2;--gold:#b18a46;--gold2:#d4b778;--ink:#665746;--rose:#d8b3aa}
+:root{--cream:#f7f0e4;--paper:#fffaf1;--gold:#a77c2f;--gold2:#c8a45c;--gold3:#e5d3a8;--ink:#5f503e;--muted:#86745b;--rose:#b98583}
 *{box-sizing:border-box}
-html{min-height:100%;background:var(--paper)}
-body{margin:0;min-height:100svh;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 50% 25%,#fffdf8 0%,var(--paper) 68%,#eee2d0 100%);display:flex;justify-content:center;align-items:flex-start;padding:22px 16px}
-.page{width:min(100%,460px);min-height:calc(100svh - 44px);height:auto;position:relative;display:flex;align-items:center;justify-content:center;padding:25px 20px;overflow:visible;flex-shrink:0}
-.frame{position:absolute;inset:7px;border:1px solid var(--gold2);pointer-events:none}
-.frame:before{content:"";position:absolute;inset:5px;border:1px solid #d9c69f;opacity:.75}
-.corner{position:absolute;width:95px;height:120px;color:var(--gold);opacity:.8}
-.corner svg{width:100%;height:100%}.tl{top:8px;left:8px}.tr{top:8px;right:8px;transform:scaleX(-1)}.bl{bottom:8px;left:8px;transform:scaleY(-1)}.br{bottom:8px;right:8px;transform:scale(-1)}
-.content{position:relative;z-index:1;text-align:center;width:100%;padding:24px 8px 16px}
-.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#967847;margin:0 0 20px}
-.headline{font-size:clamp(19px,5.3vw,25px);font-weight:normal;line-height:1.55;letter-spacing:.045em;margin:0 auto 26px;max-width:310px;color:#77654e}
-.headline em{font-style:italic;color:#a8864a}
-.envelope-wrap{width:min(82%,310px);margin:0 auto 28px;perspective:1000px;filter:drop-shadow(0 13px 15px #816b4720)}
-.envelope{height:205px;position:relative;cursor:pointer;outline:none;transition:transform .3s}
-.env-back{position:absolute;inset:0;background:linear-gradient(145deg,#fffaf0,#eee0c8);border:1px solid #c9ad73;border-radius:3px}
-.env-front{position:absolute;inset:0;background:linear-gradient(155deg,#fff8ed,#f0e2cb);clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);border:1px solid #c9ad73}
-.env-flap{position:absolute;inset:0;background:linear-gradient(145deg,#f5e8d2,#fff9ef);clip-path:polygon(0 0,100% 0,50% 62%);transform-origin:top;transition:transform .85s cubic-bezier(.2,.7,.2,1);z-index:4;border-top:1px solid #c9ad73}
-.seal{position:absolute;z-index:5;left:50%;top:52%;transform:translate(-50%,-50%);width:43px;height:43px;border:1px solid #b18a46;border-radius:50%;display:grid;place-items:center;background:#f9f0df;color:#a47c39;font-size:20px;transition:opacity .3s}
-.envelope.open .env-flap{transform:rotateX(180deg);z-index:0}.envelope.open .seal{opacity:0}.envelope.open{transform:translateY(4px)}
-.envelope:focus-visible{outline:2px solid var(--gold);outline-offset:7px}
-.names{font-size:clamp(30px,8.5vw,42px);font-weight:normal;letter-spacing:.045em;color:#a7813e;margin:0 0 9px}
-.amp{font-style:italic;color:#b9a071;font-size:.85em}
-.date{font-size:13px;letter-spacing:.23em;color:#7b6a54;margin:0 0 23px}
-.rule{height:1px;width:70px;margin:0 auto 19px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.button{appearance:none;border:1px solid #b58e4a;background:linear-gradient(120deg,#b18a46,#d1b16e);color:#fffdf8;border-radius:3px;padding:16px 25px;min-height:52px;font-family:Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:.18em;cursor:pointer;box-shadow:0 5px 12px #8d71321a;transition:transform .2s,box-shadow .2s}
-.button:active{transform:scale(.98)}.button:focus-visible{outline:2px solid #8c682d;outline-offset:4px}
-.hint{font-family:Arial,sans-serif;font-size:10px;letter-spacing:.12em;color:#9c8b72;margin:15px 0 0;text-transform:uppercase}
-.inside{display:none;animation:fade .8s ease both}.inside.visible{display:block}.inside.content{padding:30px 10px 42px}.story-intro{font-size:13px;line-height:1.8;letter-spacing:.03em;max-width:330px;margin:0 auto 24px}.story-heading{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#987a45;margin:0 0 18px}.photo-placeholder{height:210px;width:min(100%,300px);margin:22px auto;background:linear-gradient(145deg,#fffaf2,#f0e3d0);border:1px solid #d3bb8b;outline:1px solid #e2d2b2;outline-offset:5px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#a1875b}.photo-placeholder .camera{font-size:26px}.photo-placeholder small{font:10px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}.story-copy{font-size:17px;line-height:1.85;max-width:330px;margin:20px auto;color:#76644f}.story-copy em{color:#a8864a}.section-rule{height:1px;width:75px;margin:34px auto;background:linear-gradient(90deg,transparent,var(--gold),transparent)}.verse{font-size:18px;line-height:1.8;font-style:italic;max-width:315px;margin:0 auto 12px;color:#79674f}.verse-ref{font:10px Arial,sans-serif;letter-spacing:.2em;color:#987a45}.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:340px;margin:24px auto 0}.countbox{border:1px solid #d8c49d;padding:14px 4px 11px;background:#fffaf280}.countbox strong{display:block;font-size:26px;font-weight:normal;color:#a7813e}.countbox span{display:block;margin-top:6px;font:9px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8b7961}.count-label{font-size:11px;letter-spacing:.2em;color:#987a45;text-transform:uppercase;margin-top:24px}.signature{font-size:12px;letter-spacing:.18em;color:#a7813e;margin-top:25px}@media(max-width:360px){.countdown{gap:5px}.countbox strong{font-size:22px}.countbox{padding:12px 2px 9px}}
-.cover.hidden{display:none}
-.inside .small{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#987a45;margin-bottom:22px}
-.inside .message{font-size:18px;line-height:1.7;color:#7a6853;max-width:300px;margin:0 auto 22px}
-.inside .names{font-size:35px}
+html{scroll-behavior:smooth;background:var(--cream)}
+body{margin:0;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:linear-gradient(180deg,#fffaf1 0%,#f7f0e4 45%,#fffaf1 100%);font-size:16px}
+button,input,textarea{font:inherit}
+.cover{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:25px 18px;position:relative;overflow:hidden}
+.cover:before{content:"";position:absolute;inset:12px;border:1px solid var(--gold2);pointer-events:none}
+.cover:after{content:"";position:absolute;inset:18px;border:1px solid #e1d0a8;pointer-events:none}
+.cover-inner{width:min(100%,420px);text-align:center;position:relative;z-index:1;padding:30px 14px}
+.botanical{color:var(--gold);font-size:25px;letter-spacing:.45em;margin-bottom:18px}
+.eyebrow{font:10px Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0 0 22px}
+.headline{font-size:clamp(19px,5.5vw,25px);font-weight:normal;line-height:1.55;letter-spacing:.04em;margin:0 auto 27px;max-width:330px}
+.headline em{font-style:italic;color:var(--gold)}
+.envelope-wrap{width:min(80%,290px);margin:0 auto 26px;filter:drop-shadow(0 12px 12px #745a281b)}
+.envelope{height:180px;position:relative;cursor:pointer}
+.env-back{position:absolute;inset:0;background:linear-gradient(145deg,#fffdf7,#efe0c3);border:1px solid var(--gold2)}
+.env-front{position:absolute;inset:0;background:linear-gradient(150deg,#fff8ea,#f1e2c7);clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);border:1px solid var(--gold2)}
+.env-flap{position:absolute;inset:0;background:linear-gradient(145deg,#f2e4c8,#fffaf0);clip-path:polygon(0 0,100% 0,50% 62%);transform-origin:top;transition:transform .8s;z-index:4}
+.seal{position:absolute;z-index:5;left:50%;top:54%;transform:translate(-50%,-50%);width:46px;height:46px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;background:#fff8e9;color:var(--gold);font-size:17px;box-shadow:0 0 0 3px #fff8e9}
+.envelope.open .env-flap{transform:rotateX(180deg);z-index:0}.envelope.open .seal{opacity:0}
+.names{font-size:clamp(31px,8.8vw,43px);font-weight:normal;letter-spacing:.045em;color:var(--gold);margin:0 0 9px}
+.amp{font-style:italic;color:#bba16a;font-size:.83em}
+.date{font:11px Arial,sans-serif;letter-spacing:.25em;color:var(--muted);margin:0 0 24px}
+.rule{height:1px;width:95px;margin:0 auto 20px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.button{border:1px solid var(--gold);background:linear-gradient(115deg,#9e742a,#c7a45d);color:#fffdf7;border-radius:2px;padding:16px 22px;min-height:50px;font:600 10px Arial,sans-serif;letter-spacing:.18em;cursor:pointer;box-shadow:0 5px 12px #8d71321a}
+.hint{font:9px Arial,sans-serif;letter-spacing:.16em;color:#9b896e;margin:14px 0 0;text-transform:uppercase}
+#invitation{display:none}#invitation.visible{display:block;animation:fade .6s ease both}
+.section{width:min(100%,480px);margin:0 auto;padding:55px 25px;text-align:center;position:relative}
+.section:after{content:"";position:absolute;left:18px;right:18px;top:12px;bottom:12px;border:1px solid #ddc998;pointer-events:none;opacity:.72}
+.section>*{position:relative;z-index:1}
+.kicker{font:10px Arial,sans-serif;letter-spacing:.23em;text-transform:uppercase;color:var(--gold);margin:0 0 20px}
+.section h2{font-size:25px;font-weight:normal;color:var(--gold);line-height:1.35;margin:0 0 22px}
+.copy{font-size:16px;line-height:1.85;max-width:345px;margin:0 auto;color:#6e5d47}
+.script{font-style:italic;color:var(--gold)}
+.flourish{color:var(--gold);letter-spacing:.35em;font-size:17px;margin:24px 0}
+.photo-placeholder{width:min(100%,310px);height:230px;margin:25px auto;background:linear-gradient(145deg,#fffdf8,#f0e3cc);border:1px solid var(--gold2);outline:1px solid #e8d9b7;outline-offset:5px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:#a8884b}
+.photo-placeholder span{font-size:28px}.photo-placeholder small{font:9px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase}
+.verse{font-size:19px;line-height:1.8;font-style:italic;max-width:330px;margin:0 auto 13px;color:#6d5b44}
+.verse-ref{font:10px Arial,sans-serif;letter-spacing:.2em;color:var(--gold)}
+.countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;max-width:355px;margin:24px auto 0}
+.countbox{border:1px solid var(--gold2);padding:13px 3px 10px;background:#fffaf1}
+.countbox strong{display:block;font-size:25px;font-weight:normal;color:var(--gold)}
+.countbox span{display:block;margin-top:6px;font:8px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.detail-card{border:1px solid var(--gold2);background:#fffaf1;padding:23px 16px;margin:16px auto;max-width:340px}
+.detail-card h3{font-size:20px;font-weight:normal;color:var(--gold);margin:0 0 10px}
+.detail-card p{font-size:14px;line-height:1.7;margin:5px 0}
+.note{font:10px Arial,sans-serif;line-height:1.7;color:#927e5d;letter-spacing:.04em}
+.color-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px 8px;max-width:340px;margin:25px auto 18px}
+.swatch{height:44px;border-radius:50%;width:44px;max-width:100%;margin:0 auto 7px;border:1px solid #d1c2a3;box-shadow:0 2px 5px #6c512315}
+.swatch-label{font:9px Arial,sans-serif;color:#7b6b54;line-height:1.4}
+.palette-item{min-width:0}
+.color-group{display:flex;justify-content:center;gap:5px;margin:0 auto 7px}
+.color-group .swatch{width:28px;height:28px;margin:0}
+.envelope-card{max-width:310px;margin:22px auto 0;padding:36px 18px;border:1px solid var(--gold2);outline:1px solid #e7d8b6;outline-offset:5px;background:linear-gradient(145deg,#fffdf8,#f2e5ce);color:var(--gold);font-size:19px;letter-spacing:.12em}
+.envelope-card .botanical{font-size:20px;margin:0 0 16px}
+.rsvp-form{max-width:330px;margin:25px auto 0;text-align:left}
+.rsvp-form label{display:block;font:10px Arial,sans-serif;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;margin:15px 0 6px}
+.rsvp-form input,.rsvp-form textarea{width:100%;border:1px solid #d8c391;background:#fffdf7;padding:12px;color:var(--ink);border-radius:0;min-height:44px}
+.rsvp-form .button{width:100%;margin-top:18px}
+.footer{padding:28px 20px 45px;text-align:center;font:9px Arial,sans-serif;letter-spacing:.15em;color:#9b896e}
 @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-@media(max-height:650px){.page{min-height:calc(100svh - 20px);padding:14px}.headline{margin-bottom:15px}.envelope-wrap{margin-bottom:17px}.envelope{height:160px}.content{padding:12px 8px}.eyebrow{margin-bottom:12px}.date{margin-bottom:15px}}
+@media(max-width:360px){.section{padding:48px 20px}.countbox strong{font-size:21px}.swatch{width:37px;height:37px}.color-grid{gap:12px 4px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<main class="page">
-  <div class="frame" aria-hidden="true"></div>
-  <div class="corner tl" aria-hidden="true"><svg viewBox="0 0 100 125" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M5 88C27 72 20 40 56 12M10 109C35 85 44 55 58 20M15 24C35 26 44 42 45 58M28 13C48 18 58 34 58 48M8 67C24 54 34 50 48 49"/><ellipse cx="27" cy="35" rx="7" ry="15" transform="rotate(-35 27 35)"/><ellipse cx="42" cy="28" rx="6" ry="13" transform="rotate(-42 42 28)"/><ellipse cx="27" cy="70" rx="7" ry="16" transform="rotate(35 27 70)"/><path d="M58 20C67 9 79 9 85 17C75 25 67 25 58 20Z"/><path d="M42 47C48 36 61 34 69 40C62 50 52 52 42 47Z"/><circle cx="58" cy="12" r="3"/><path d="M56 12l-7 -5M59 12l7 -7M57 14l-2 7"/></svg></div>
-  <div class="corner tr" aria-hidden="true"><svg viewBox="0 0 100 125" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M5 88C27 72 20 40 56 12M10 109C35 85 44 55 58 20M15 24C35 26 44 42 45 58M28 13C48 18 58 34 58 48M8 67C24 54 34 50 48 49"/><ellipse cx="27" cy="35" rx="7" ry="15" transform="rotate(-35 27 35)"/><ellipse cx="42" cy="28" rx="6" ry="13" transform="rotate(-42 42 28)"/><ellipse cx="27" cy="70" rx="7" ry="16" transform="rotate(35 27 70)"/><path d="M58 20C67 9 79 9 85 17C75 25 67 25 58 20Z"/><path d="M42 47C48 36 61 34 69 40C62 50 52 52 42 47Z"/><circle cx="58" cy="12" r="3"/></svg></div>
-  <div class="corner bl" aria-hidden="true"><svg viewBox="0 0 100 125" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M5 88C27 72 20 40 56 12M10 109C35 85 44 55 58 20M15 24C35 26 44 42 45 58M28 13C48 18 58 34 58 48M8 67C24 54 34 50 48 49"/><ellipse cx="27" cy="35" rx="7" ry="15" transform="rotate(-35 27 35)"/><ellipse cx="42" cy="28" rx="6" ry="13" transform="rotate(-42 42 28)"/><ellipse cx="27" cy="70" rx="7" ry="16" transform="rotate(35 27 70)"/><path d="M58 20C67 9 79 9 85 17C75 25 67 25 58 20Z"/><path d="M42 47C48 36 61 34 69 40C62 50 52 52 42 47Z"/><circle cx="58" cy="12" r="3"/></svg></div>
-  <div class="corner br" aria-hidden="true"><svg viewBox="0 0 100 125" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M5 88C27 72 20 40 56 12M10 109C35 85 44 55 58 20M15 24C35 26 44 42 45 58M28 13C48 18 58 34 58 48M8 67C24 54 34 50 48 49"/><ellipse cx="27" cy="35" rx="7" ry="15" transform="rotate(-35 27 35)"/><ellipse cx="42" cy="28" rx="6" ry="13" transform="rotate(-42 42 28)"/><ellipse cx="27" cy="70" rx="7" ry="16" transform="rotate(35 27 70)"/><path d="M58 20C67 9 79 9 85 17C75 25 67 25 58 20Z"/><path d="M42 47C48 36 61 34 69 40C62 50 52 52 42 47Z"/><circle cx="58" cy="12" r="3"/></svg></div>
-  <section class="content cover" id="cover">
+<section class="cover" id="cover">
+  <div class="cover-inner">
+    <div class="botanical" aria-hidden="true">❧ ✧ ❧</div>
     <p class="eyebrow">Una invitación hecha con amor</p>
     <h1 class="headline">HAY HISTORIAS DE AMOR<br>QUE NO SOLO SE CUENTAN,<br><em>SE VIVEN…</em></h1>
-    <div class="envelope-wrap">
-      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Sobre de invitación. Pulsa para abrir">
-        <div class="env-back"></div><div class="env-front"></div><div class="env-flap"></div><div class="seal" aria-hidden="true">J<span style="font-size:10px">&</span>A</div>
-      </div>
-    </div>
+    <div class="envelope-wrap"><div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Toca para abrir la invitación"><div class="env-back"></div><div class="env-front"></div><div class="env-flap"></div><div class="seal">J<span style="font-size:10px">&</span>A</div></div></div>
     <p class="names">JOSÉ <span class="amp">&</span> ASLY</p>
     <p class="date">26 · 12 · 2026</p>
     <div class="rule"></div>
     <button class="button" id="openBtn">ABRIR INVITACIÓN</button>
-    <p class="hint">Toca para abrir nuestro sobre</p>
+    <p class="hint">Toca para descubrir nuestra historia</p>
+  </div>
+</section>
+<main id="invitation">
+  <section class="section">
+    <p class="kicker">Con la bendición de Dios</p>
+    <h2>José & Asly</h2>
+    <p class="copy">Nos hace muy felices compartir contigo el comienzo de nuestro para siempre.</p>
+    <div class="flourish">✧ ❧ ✧</div>
+    <p class="date">26 · 12 · 2026</p>
   </section>
-  <section class="content inside" id="inside" aria-live="polite">
-    <p class="small">Con la bendición de Dios</p>
-    <p class="message">Nos hace muy felices compartir contigo el comienzo de nuestro para siempre.</p>
+  <section class="section">
+    <p class="kicker">Nuestra historia</p>
+    <h2>Hay historias que se viven…</h2>
+    <p class="copy">Desde 2015, cuando la vida nos cruzó en el momento perfecto, comenzó una historia llena de risas, aprendizajes, aventuras y mucho amor.</p>
+    <div class="photo-placeholder"><span>✧</span><small>Una foto de nuestra historia</small></div>
+    <p class="copy">Crecimos. Cambiamos. Aprendimos. Y seguimos eligiéndonos.</p>
+    <div class="photo-placeholder"><span>✧</span><small>Un recuerdo de los dos</small></div>
+    <div class="flourish">❧ ✧ ❧</div>
+    <p class="verse">“Por encima de todo, vístanse de amor, que es el vínculo perfecto.”</p>
+    <p class="verse-ref">COLOSENSES 3:14</p>
+  </section>
+  <section class="section">
+    <p class="kicker">Cada vez falta menos</p>
+    <h2>La cuenta regresiva</h2>
+    <p class="copy">Estamos contando los días para celebrar contigo este momento tan especial.</p>
+    <div class="countdown">
+      <div class="countbox"><strong id="days">00</strong><span>Días</span></div>
+      <div class="countbox"><strong id="hours">00</strong><span>Horas</span></div>
+      <div class="countbox"><strong id="minutes">00</strong><span>Minutos</span></div>
+      <div class="countbox"><strong id="seconds">00</strong><span>Segundos</span></div>
+    </div>
+  </section>
+  <section class="section">
+    <p class="kicker">Nos unirá el amor</p>
+    <h2>La ceremonia</h2>
+    <div class="detail-card"><h3>Ceremonia religiosa</h3><p>Iglesia San José de Majagual</p><p class="note">La hora será confirmada próximamente.</p></div>
+    <div class="detail-card"><h3>Después, celebremos juntos</h3><p>Recepción en Majagua</p><p class="note">Compartiremos los detalles de la celebración cuando estén confirmados.</p></div>
+  </section>
+  <section class="section">
+    <p class="kicker">Un detalle importante</p>
+    <h2>Una celebración para adultos</h2>
+    <p class="copy">Hemos preparado nuestra celebración pensando en compartir este momento de una manera especial y tranquila junto a nuestros invitados.</p>
+    <p class="copy" style="margin-top:15px">Por ello, nuestra celebración ha sido organizada exclusivamente para adultos.</p>
+    <p class="copy" style="margin-top:15px">Gracias por comprender y acompañarnos con tanto cariño en este día tan importante para nosotros. <span class="script">♡</span></p>
+  </section>
+  <section class="section">
+    <p class="kicker">Código de vestuario</p>
+    <h2>Elegancia para celebrar</h2>
+    <div class="detail-card"><h3>Ellas</h3><p>Vestido de cóctel corto o midi, elegante y apropiado para una celebración de boda.</p></div>
+    <div class="detail-card"><h3>Ellos</h3><p>Elegante casual, con un estilo clásico y atemporal. Pantalón clásico o semiclásico en dril; la guayabera es bienvenida. No es necesario usar blazer ni corbata.</p><p class="note">Por favor, evita los jeans.</p></div>
+  </section>
+  <section class="section">
+    <p class="kicker">Gracias por ayudarnos a cuidar cada detalle</p>
+    <h2>Tonos reservados</h2>
+    <p class="copy">Estos tonos están reservados para nuestra celebración. Por favor, evita usarlos en tu vestuario.</p>
+    <div class="color-grid">
+      <div class="palette-item"><div class="swatch" style="background:#fffdf4"></div><div class="swatch-label">Marfil</div></div>
+      <div class="palette-item"><div class="swatch" style="background:#f2e7d5"></div><div class="swatch-label">Crema</div></div>
+      <div class="palette-item"><div class="swatch" style="background:#ead7b4"></div><div class="swatch-label">Champagne</div></div>
+      <div class="palette-item"><div class="swatch" style="background:#c7a04d"></div><div class="swatch-label">Dorado</div></div>
+      <div class="palette-item"><div class="color-group"><div class="swatch" style="background:#e8c3c2"></div><div class="swatch" style="background:#bd898b"></div></div><div class="swatch-label">Gama de rosados</div></div>
+      <div class="palette-item"><div class="swatch" style="background:#702d3b"></div><div class="swatch-label">Vino / Borgoña</div></div>
+      <div class="palette-item"><div class="swatch" style="background:#171615"></div><div class="swatch-label">Negro</div></div>
+      <div class="palette-item"><div class="swatch" style="background:#a92d32"></div><div class="swatch-label">Rojo</div></div>
+      <div class="palette-item"><div class="swatch" style="background:#ffffff"></div><div class="swatch-label">Blanco</div></div>
+    </div>
+    <p class="copy">En resumen, elige un color diferente a los tonos mostrados. <span class="script">♡</span></p>
+  </section>
+  <section class="section">
+    <p class="kicker">Un regalo desde el corazón</p>
+    <h2>Con cariño</h2>
+    <div class="envelope-card"><div class="botanical">❧ ✧ ❧</div>LLUVIA DE SOBRES</div>
+  </section>
+  <section class="section">
+    <div class="botanical">❧ ✧ ❧</div>
     <p class="names">JOSÉ <span class="amp">&</span> ASLY</p>
     <p class="date">26 · 12 · 2026</p>
     <div class="rule"></div>
-    <p class="message" style="font-size:15px">Nuestra historia continúa…</p>
-    <p class="hint">Esta es la primera versión de nuestra invitación</p>
+    <p class="copy">Gracias por ser parte de nuestra historia. Los esperamos para celebrar el amor, la vida y el comienzo de nuestro para siempre.</p>
   </section>
+  <section class="section" id="rsvp">
+    <p class="kicker">Queremos celebrar contigo</p>
+    <h2>¿Nos acompañas?</h2>
+    <p class="copy">Confirma tu asistencia para que podamos esperarte y preparar todo con mucho cariño.</p>
+    <div class="rsvp-form">
+      <label for="guest">Tu nombre completo</label><input id="guest" autocomplete="name" placeholder="Escribe tu nombre">
+      <label for="companions">¿Con quién asistirás?</label><input id="companions" placeholder="Nombre de tu acompañante o ninguno">
+      <label for="party">Número total de personas</label><input id="party" inputmode="numeric" type="number" min="1" max="20" placeholder="Incluyéndote">
+      <button class="button" id="rsvpBtn">CONFIRMAR POR WHATSAPP</button>
+      <p class="note" style="text-align:center;margin-top:12px">La confirmación se enviará por WhatsApp. Recuerda respetar los cupos indicados en tu invitación.</p>
+    </div>
+  </section>
+  <footer class="footer">CON AMOR, JOSÉ & ASLY · 26 · 12 · 2026</footer>
 </main>
 <script>
-const envelope=document.getElementById('envelope');
-const cover=document.getElementById('cover');
-const inside=document.getElementById('inside');
-const openBtn=document.getElementById('openBtn');
+const cover=document.getElementById('cover'), invitation=document.getElementById('invitation');
+const envelope=document.getElementById('envelope'), openBtn=document.getElementById('openBtn');
 let opened=false;
-function openInvitation(){if(opened)return;opened=true;envelope.classList.add('open');openBtn.textContent='ABRIENDO…';setTimeout(()=>{cover.classList.add('hidden');inside.classList.add('visible');},650);}
+function openInvitation(){if(opened)return;opened=true;envelope.classList.add('open');openBtn.textContent='ABRIENDO…';setTimeout(()=>{cover.style.display='none';invitation.classList.add('visible');window.scrollTo({top:0,behavior:'smooth'});},650);}
 openBtn.addEventListener('click',openInvitation);
 envelope.addEventListener('click',openInvitation);
 envelope.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openInvitation();}});
-function updateCountdown(){
- const target=new Date(2026,11,26,0,0,0).getTime();
- const diff=Math.max(0,target-Date.now());
- const values={days:Math.floor(diff/86400000),hours:Math.floor(diff%86400000/3600000),minutes:Math.floor(diff%3600000/60000),seconds:Math.floor(diff%60000/1000)};
- for(const [id,value] of Object.entries(values)){const el=document.getElementById(id);if(el)el.textContent=String(value).padStart(2,'0');}
-}
+function updateCountdown(){const target=new Date(2026,11,26,0,0,0).getTime();const diff=Math.max(0,target-Date.now());const v={days:Math.floor(diff/86400000),hours:Math.floor(diff%86400000/3600000),minutes:Math.floor(diff%3600000/60000),seconds:Math.floor(diff%60000/1000)};for(const [id,n] of Object.entries(v)){const el=document.getElementById(id);if(el)el.textContent=String(n).padStart(2,'0');}}
 updateCountdown();setInterval(updateCountdown,1000);
+document.getElementById('rsvpBtn').addEventListener('click',()=>{const guest=document.getElementById('guest').value.trim();const companions=document.getElementById('companions').value.trim();const party=document.getElementById('party').value.trim();if(!guest||!party){alert('Por favor, escribe tu nombre y el número de personas.');return;}const message='Hola 💕 quiero confirmar mi asistencia a la boda de José y Asly.\nMi nombre es: '+guest+'\nAsistiré con: '+(companions||'No llevaré acompañante')+'\nNúmero de personas: '+party+'\n¡Nos vemos para celebrar juntos este día tan especial! 💍🥂';window.open('https://wa.me/?text='+encodeURIComponent(message),'_blank','noopener');});
 </script>
 </body>
 </html>
